@@ -10,19 +10,40 @@
             padding: 0;
             background: url('background.jpg') center/cover; /* Dodanie tła z pliku */
             display: flex;
+            flex-direction: column; /* Ustawienie układu kolumnowego */
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start; /* Zmiana umiejscowienia zawartości na górę */
             height: 100vh;
+            font-family: 'Arial', sans-serif; /* Zmiana fontu */
         }
 
         h1 {
             font-size: 36px;
             text-align: center;
             color: #fff; /* Kolor tekstu na tle */
+            margin-bottom: 20px; /* Dodanie odstępu poniżej napisu */
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav a {
+            margin: 5px 0;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-    <h1>TEST</h1>
+    <h1>Witaj na Mojej Stronie!</h1>
+    <nav>
+        <a href="#">https://www.kiddionsmodmenu.com</a>
+        <a href="#">https://gtayes.github.io/Scooby/</a>
+        <!-- Dodaj więcej linków według potrzeb -->
+    </nav>
 </body>
 </html>
